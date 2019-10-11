@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "935397266403",
+    "firebase_url": "https://r-tone-e32a9.firebaseio.com",
+    "project_id": "r-tone-e32a9",
+    "storage_bucket": "r-tone-e32a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935397266403:android:3f5fc6fda1879a25",
+        "android_client_info": {
+          "package_name": "com.ccsidd.rtone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935397266403-tn10iueqt4keea16n82fai2slgd4hrhm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ccsidd.rtone",
+            "certificate_hash": "456624D153EBD2568B1CABF8C2AF14D29C054E32"
+          }
+        },
+        {
+          "client_id": "935397266403-lf5j2rd2rtn3eg5ds6un828ap820okfh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "935397266403-uadk3m5qojgfcb2sd9kbmailbvi6069p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQLwRsbTIcQ5_CeZ22VJ-JPLz94I0n_kI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

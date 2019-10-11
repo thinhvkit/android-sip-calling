@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="appBackground" type="color">#FFFFFF</item>
+    <item name="appForeground" type="color">#EEEEEE</item>
+    <item name="tabDialBackground" type="color">#FFFFFF</item>
+    <item name="tabDialPadBackground" type="color">#EEEEEE</item>
+    <item name="tabDialFunctionButton" type="color">#1565C0</item>
+    <item name="tabDialFunctionButtonPressed" type="color">#478AD2</item>
+    <item name="toolBar" type="color">#FFFFFF</item>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <item name="tabBarText" type="color">#1565c0</item>
+    <item name="tabBarDivider" type="color">#BBDEFB</item>
+    <item name="tabBarIndicator" type="color">#1565C0</item>
+    <item name="tabBarUnderline" type="color">#1565C0</item>
+    <item name="tabBarBackground" type="color">#E3F2FD</item>
+    <item name="editTextUnderline" type="color">#98B8DD</item>
+    <item name="text" type="color">#1565C0</item>
+    <item name="textRow" type="color">#1565C0</item>
+    <item name="textRowDetail" type="color">#1565C0</item>
+    <item name="dialPadPressed" type="color">#BBDEFB</item>
+    <item name="dialPadPressedMiniPad" type="color">#801565C0</item>
+    <item name="hintColorPhoneNumber" type="color">#BDBDBD</item>
+    <item name="textHint" type="color">#98B8DD</item>
+    <item name="characterHint" type="color">#7a7a7a</item>
+
+    <item name="dialogSeparatorTitle" type="color">#1565C0</item>
+    <item name="dialogListDivider" type="color">#E0E0E0</item>
+    <item name="dialogYESButtonText" type="color">#29B6F6</item>
+    <item name="dialogNOButtonText" type="color">#FFAB91</item>
+    <item name="dialogEditText" type="color">#E3F2Fd</item>
+
+    <item name="navigationBackground" type="color">#E3F2FD</item>
+    <item name="navigationDivider" type="color">#1565C0</item>
+
+    <item name="settingGroupDivider" type="color">#1565C0</item>
+    <item name="settingChildDivider" type="color">#E0E0E0</item>
+    <item name="settingChildTitle" type="color">#898989</item>
+
+    <item name="callingViewFunction" type="color">#801565C0</item>
+    
+    <item name="otpTextHint" type="color">#BBDEFB</item>
+    <item name="tvAccount" type="color">#90000000</item>
+    <item name="backgroundNumpad" type="color">#80BBDEFB</item>
+    <item name="settingChildTitle2" type="color">#FFFFFF</item>
+    <item name="itemPressed" type="color">#0B3360</item>
+
+    <color name="searchbox_text_color">#000000</color>
+    <color name="searchbox_background_color">#ffffff</color>
+    <color name="searchbox_hint_text_color">#a4a4a4</color>
+    <color name="searchbox_icon_tint">#a4a4a4</color>
+    <color name="search_shortcut_background_color">#b6b6b6</color>
+    <color name="search_shortcut_icon_color">#f8f8f8</color>
+    <color name="default_color_expanded">#F0F0F0</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteT70">#B3FFFFFF</color>
+    <color name="blackT87">#DE000000</color>
+    <color name="blackT12">#1F000000</color>
+    <color name="grey100">#F5F5F5</color>
+    <color name="grey500">#9E9E9E</color>
+    <color name="grey800">#424242</color>
+    <color name="grey900">#212121</color>
+    <color name="red500">#F44336</color>
+    <color name="redA100">#FF8A80</color>
+    <color name="redA200">#FF5252</color>
+    <color name="pink500">#FBC4DF</color>
+    <color name="purple500">#9C27B0</color>
+    <color name="deepPurple500">#673AB7</color>
+    <color name="indigo500">#3F51B5</color>
+    <color name="blue500">#2196F3</color>
+    <color name="lightBlue500">#03A9F4</color>
+    <color name="lightBlueA700">#0091EA</color>
+    <color name="cyan500">#00BCD4</color>
+    <color name="teal50">#E0F2F1</color>
+    <color name="teal100">#B2DFDB</color>
+    <color name="teal500">#009688</color>
+    <color name="teal900">#004D40</color>
+    <color name="green500">#4CAF50</color>
+    <color name="greenA700">#00C853</color>
+    <color name="orange50">#FFF3E0</color>
+    <color name="orange100">#FFE0B2</color>
+    <color name="orange300">#FFB74D</color>
+    <color name="orange500">#FF9800</color>
+    <color name="orange700">#F57C00</color>
+    <color name="brown300">#A1887F</color>
+    <color name="brown500">#795548</color>
+    <color name="white_med">#eeeeee</color>
+    <color name="white_holo">#e5e5e5</color>
+    <color name="grey_light_mega_ultra">#eeeeee</color>
+    <color name="grey_light_ultra">#cccccc</color>
+    <color name="grey_light">#999999</color>
+    <color name="grey_dark">#333333</color>
+    <color name="grey_material">#ff212121</color>
+    <color name="grey_dark_ultra">#111111</color>
+    <color name="black">#000000</color>
+    <color name="theme_light_text_primary">#212121</color>
+    <color name="theme_light_text_secondary">#707070</color>
+    <color name="theme_dark_text_primary">#FFFFFF</color>
+    <color name="theme_dark_text_secondary">#999999</color>
+
+</resources>

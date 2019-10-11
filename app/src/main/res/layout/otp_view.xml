@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.innovattic.font.FontEditText
+        android:id="@+id/otp_ed_otp"
+        style="@style/EditText.OTP"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ed_otp"
+        android:gravity="center"
+        android:hint="Input the OTP code via SMS"
+        android:inputType="number"
+        android:maxLength="8"
+        android:textColorHint="@color/otpTextHint" />
+
+    <com.innovattic.font.FontButton
+        android:id="@+id/otp_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/selector_button_login"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/selector_color_button_login"
+        android:textSize="40sp"
+        app:flFont="notera" />
+
+    <com.innovattic.font.FontTextView
+        android:id="@+id/otp_tv_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:text="Resend OTP code"
+        android:textColor="@color/selector_color_tv_resend"
+        android:textSize="16sp"
+        app:flFont="roboto" />
+
+    <com.innovattic.font.FontTextView
+        android:id="@+id/otp_tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:text="Back"
+        android:textColor="@color/selector_color_tv_back"
+        android:textSize="16sp"
+        app:flFont="roboto" />
+</merge>

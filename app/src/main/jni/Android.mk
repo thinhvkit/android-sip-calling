@@ -1,0 +1,11 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := libpjsua2
+LOCAL_MULTILIB	:= both
+LOCAL_CFLAGS    := $(APP_CXXFLAGS) -frtti -fexceptions
+LOCAL_LDFLAGS   := $(APP_LDXXFLAGS)
+LOCAL_LDLIBS    := $(APP_LDXXLIBS)
+#LOCAL_SHARED_LIBRARIES := $(APP_LDXXLIBS)
+
+include $(BUILD_SHARED_LIBRARY)

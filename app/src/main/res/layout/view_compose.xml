@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ccsidd.rtone.message.view.ComposeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/compose_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <!--<FrameLayout
+        android:id="@+id/attachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.moez.QKSMS.ui.view.AttachmentImageView
+            android:id="@+id/compose_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="128dp"
+            android:minHeight="0dp"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/cancel_shadow" />
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="top|right"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@drawable/ic_cancel" />
+
+    </FrameLayout>-->
+
+ <!--   <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/ab_shadow" />-->
+
+   <!-- <LinearLayout
+        android:id="@+id/emojis_sticker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/emojis_sticker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/emoji_people"
+            android:src="@drawable/emoji_nature" />
+    </LinearLayout>-->
+
+    <com.ccsidd.rtone.message.view.CollapsableLinearLayout
+        android:id="@+id/layout_reply_emoji_compose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_light_mega_ultra">
+
+            <RelativeLayout
+                android:id="@+id/layout_reply_emoji"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_toStartOf="@+id/compose_button"
+                android:background="@drawable/message_neutral">
+
+                <com.ccsidd.rtone.message.emoji.EmojiEditText
+                    android:id="@+id/compose_reply_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/emoji_button"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Enter a message"
+                    android:imeOptions="actionSend"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="3"
+                    android:textColor="?textColorNumberPad"
+                    android:textColorHint="@color/grey500"
+                    android:textCursorDrawable="@null"
+                    app:emojiSize="@dimen/text_size_title" />
+
+                <FrameLayout
+                    android:id="@+id/emoji_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/compose_reply_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:animateLayoutChanges="true"
+                    android:background="?attr/selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:id="@+id/emoji_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/emoji_people" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/compose_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layout_reply_emoji"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:animateLayoutChanges="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fab_shadow_mini" />
+
+                <ImageView
+                    android:id="@+id/compose_button_background"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/send_background" />
+
+                <ImageView
+                    android:id="@+id/compose_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/plus_to_arrow" />
+
+                <!--<com.github.lzyzsd.circleprogress.DonutProgress
+                    android:id="@+id/progress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:rotation="90"
+                    android:visibility="invisible"
+                    app:donut_finished_color="@color/white"
+                    app:donut_finished_stroke_width="4dp"
+                    app:donut_max="360"
+                    app:donut_text_size="0sp"
+                    app:donut_unfinished_color="@color/white"
+                    app:donut_unfinished_stroke_width="4dp" />-->
+
+            </FrameLayout>
+
+            <com.ccsidd.rtone.message.view.QKTextView
+                android:id="@+id/compose_letter_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/layout_reply_emoji"
+                android:layout_toRightOf="@+id/layout_reply_emoji"
+                android:maxLines="1"
+                android:paddingTop="16dp"
+                android:textColor="@color/grey100"
+                app:type="tertiary" />
+
+        </RelativeLayout>
+    </com.ccsidd.rtone.message.view.CollapsableLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attachment_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/emoji_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--<ImageButton
+            android:id="@+id/attach"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/ripple_light"
+            android:padding="16dp"
+            android:src="@drawable/ic_photo" />
+
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/ripple_light"
+            android:padding="16dp"
+            android:src="@drawable/ic_camera" />
+
+        <ImageButton
+            android:id="@+id/delay"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/ripple_light"
+            android:padding="16dp"
+            android:src="@drawable/ic_timer" />-->
+    </LinearLayout>
+
+</com.ccsidd.rtone.message.view.ComposeView>

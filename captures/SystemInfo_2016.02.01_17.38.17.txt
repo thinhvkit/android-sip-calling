@@ -1,0 +1,39 @@
+Applications Memory Usage (kB):
+Uptime: 19956368 Realtime: 19963203
+
+** MEMINFO in pid 26807 [com.ccsidd.rtone] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     3080     3040        0     2868    10728     7193      578
+  Dalvik Heap    36908    36796        0       48    45021    36910     8111
+ Dalvik Other      257      248        0        8                           
+        Stack      176      176        0        0                           
+    Other dev        5        0        4        0                           
+     .so mmap     1633      336        0     2708                           
+    .apk mmap      341        0      204        0                           
+    .ttf mmap      382        0      380        0                           
+    .dex mmap      544        0      140        0                           
+    code mmap      802        0       28        0                           
+   image mmap     1095      772        0      616                           
+   Other mmap      498        4      480        0                           
+           GL     9315     9315        0        0                           
+      Unknown      663      620        0      116                           
+        TOTAL    55699    51307     1236     6364    55749    44103     8689
+ 
+ Objects
+               Views:       15         ViewRootImpl:        1
+         AppContexts:        3           Activities:        1
+              Assets:        8        AssetManagers:        8
+       Local Binders:        9        Proxy Binders:       14
+    Death Recipients:        1
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 
+ 
+ Asset Allocations
+    zip:/data/app/com.ccsidd.rtone-2/base.apk:/assets/fonts/notera/Notera.ttf: 135K
+    zip:/data/app/com.ccsidd.rtone-2/base.apk:/assets/fonts/roboto/Roboto-Regular.ttf: 123K

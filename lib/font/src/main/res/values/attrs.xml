@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="Fonts">
+		<attr name="flFont" format="string|reference" />
+		<attr name="android:textStyle" />
+		<attr name="flBorderColor" format="color|reference" />
+		<attr name="flBorderWidth" format="dimension|reference" />
+	</declare-styleable>
+
+	<declare-styleable name="FontEditText">
+		<attr name="flunderlineHeight" format="integer" />
+		<attr name="flunderlineColor" format="color|reference" />
+	</declare-styleable>
+	
+	<item type="id" name="flFontsExtraData" />
+
+</resources>

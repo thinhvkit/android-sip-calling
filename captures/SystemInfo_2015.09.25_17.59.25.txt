@@ -1,0 +1,33 @@
+Applications Memory Usage (kB):
+Uptime: 7543157 Realtime: 9545393
+
+** MEMINFO in pid 6185 [com.ccsidd.rconnect.app:VoIP] **
+                         Shared  Private     Heap     Heap     Heap
+                   Pss    Dirty    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------
+       Native       32        8       32     3108     2875      232
+       Dalvik     2069    13880     1720    17776     8901     8875
+       Cursor        0        0        0                           
+       Ashmem        0        0        0                           
+    Other dev        4       52        0                           
+     .so mmap     2311     3124      692                           
+    .jar mmap        0        0        0                           
+    .apk mmap       32        0        0                           
+    .ttf mmap        0        0        0                           
+    .dex mmap      510        0        0                           
+   Other mmap      204      448      100                           
+      Unknown      800      860      792                           
+        TOTAL     5962    18372     3336    20884    11776     9107
+ 
+ Objects
+               Views:        0         ViewRootImpl:        0
+         AppContexts:        4           Activities:        0
+              Assets:        3        AssetManagers:        3
+       Local Binders:        3        Proxy Binders:       10
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashScreen_ln"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="?bg_about"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.ccsidd.rtone.activities.AboutActivity">
+
+    <include layout="@layout/view_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/contact_row_imgv_avatar"
+            android:layout_height="@dimen/contact_row_imgv_avatar"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_about" />
+
+        <com.innovattic.font.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="?numberPadStyle"
+            android:textSize="@dimen/text_size_hint"
+            tools:font="roboto medium" />
+
+        <com.innovattic.font.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="?numberPadStyle"
+            android:textSize="@dimen/text_size_small"
+            tools:font="roboto" />
+
+        <com.innovattic.font.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/termsOfService"
+            android:textColor="?numberPadStyle"
+            android:textSize="@dimen/text_size_title"
+            tools:font="roboto light" />
+
+        <com.innovattic.font.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/copyRight"
+            android:textColor="?numberPadStyle"
+            android:textSize="@dimen/text_size_small"
+            tools:font="roboto light" />
+    </LinearLayout>
+
+</LinearLayout>

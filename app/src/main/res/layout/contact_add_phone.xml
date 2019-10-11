@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_phone_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/edt_ContactPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:hint="Enter contact phone"
+        android:inputType="phone"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:textColor="?textColorNumberPad"
+        android:textColorHint="@color/hintColorPhoneNumber"
+        android:textSize="@dimen/text_size_title" />
+
+    <Spinner
+        android:id="@+id/spin_PhoneType"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:backgroundTint="@color/text"
+        android:popupTheme="@style/ActionBarPopupThemeOverlay" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+
+        <Button
+            android:id="@+id/btn_action_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="-"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="?textColorNumberPad" />
+    </LinearLayout>
+
+
+</LinearLayout>

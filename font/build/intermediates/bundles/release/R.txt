@@ -1,0 +1,14 @@
+int attr flBorderColor 0x7f010003
+int attr flBorderWidth 0x7f010004
+int attr flFont 0x7f010002
+int attr flunderlineColor 0x7f010001
+int attr flunderlineHeight 0x7f010000
+int id flFontsExtraData 0x7f020000
+int[] styleable FontEditText { 0x7f010000, 0x7f010001 }
+int styleable FontEditText_flunderlineColor 1
+int styleable FontEditText_flunderlineHeight 0
+int[] styleable Fonts { 0x01010097, 0x7f010002, 0x7f010003, 0x7f010004 }
+int styleable Fonts_android_textStyle 0
+int styleable Fonts_flBorderColor 2
+int styleable Fonts_flBorderWidth 3
+int styleable Fonts_flFont 1

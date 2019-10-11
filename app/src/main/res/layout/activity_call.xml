@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/call_activity_main_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?call_background">
+
+        <android.support.percent.PercentFrameLayout
+            android:id="@+id/fm_call_screen_function"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_heightPercent="20%"
+            app:layout_marginTopPercent="60%">
+            <!-- other actual layout stuff here EVERYTHING HERE -->
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_heightPercent="50%"
+                app:layout_marginTopPercent="00%"
+                app:layout_widthPercent="100%">
+
+                <ToggleButton
+                    android:id="@+id/fm_call_screen_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="?selector_toggle_speaker"
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_marginLeftPercent="10%" />
+
+                <ToggleButton
+                    android:id="@+id/fm_call_screen_micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?selector_toggle_micro_off"
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/fm_call_screen_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="?selector_toggle_hold"
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_marginRightPercent="10%" />
+            </android.support.percent.PercentFrameLayout>
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_heightPercent="50%"
+                app:layout_marginTopPercent="50%"
+                app:layout_widthPercent="100%">
+
+                <ToggleButton
+                    android:id="@+id/fm_call_screen_dialPad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="?selector_toggle_pad"
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_marginLeftPercent="10%" />
+
+                <ToggleButton
+                    android:id="@+id/fm_call_screen_bluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?selector_toggle_bluetooth"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/fm_call_screen_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="?selector_toggle_add"
+                    android:textOff=""
+                    android:textOn=""
+                    app:layout_marginRightPercent="10%" />
+
+            </android.support.percent.PercentFrameLayout>
+        </android.support.percent.PercentFrameLayout>
+
+        <android.support.percent.PercentFrameLayout
+            android:id="@+id/fm_call_screen_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/fm_call_screen_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avatar_unknow"
+                app:layout_heightPercent="25%"
+                app:layout_marginTopPercent="6.25%"
+                app:layout_widthPercent="50%" />
+
+            <com.innovattic.font.FontTextView
+                android:id="@+id/fm_call_screen_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="dfadsfsaf"
+                android:textColor="?textColorNumberPad"
+                android:textSize="@dimen/text_size_medium"
+                app:flFont="roboto"
+                app:layout_marginTopPercent="36%" />
+
+            <com.innovattic.font.FontTextView
+                android:id="@+id/fm_call_screen_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="asd"
+                android:textColor="?textColorNumberPad"
+                android:textSize="@dimen/text_size_title"
+                app:flFont="roboto light"
+                app:layout_marginTopPercent="50%" />
+        </android.support.percent.PercentFrameLayout>
+
+        <android.support.percent.PercentFrameLayout
+            android:id="@+id/fm_call_screen_control"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/fm_call_screen_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="?selector_button_accept"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="55%"
+                app:layout_widthPercent="50%" />
+
+            <Button
+                android:id="@+id/fm_call_screen_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="?selector_button_reject"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="70%"
+                app:layout_widthPercent="50%" />
+
+            <Button
+                android:id="@+id/fm_call_screen_hang_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selector_button_hangup"
+                app:layout_heightPercent="10%"
+                app:layout_marginLeftPercent="12.5%"
+                app:layout_marginTopPercent="80%"
+                app:layout_widthPercent="75%" />
+
+        </android.support.percent.PercentFrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fm_call_ln"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_heightPercent="60%">
+
+            <com.innovattic.font.FontEditText
+                android:id="@+id/fm_call_screen_edNumberPhone"
+                style="@style/NumberText.MiniPad"
+                android:longClickable="false"
+                android:textCursorDrawable="?cursor_drawable"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="?textColorNumberPad" />
+
+            <LinearLayout style="@style/LinearRow.MiniPad">
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="1">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="?textColorNumberPad" />
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="2">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="2" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/CharacterPadStyle.MiniPad"
+                        android:text="ABC" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="?textColorNumberPad" />
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="3">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="3" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/CharacterPadStyle.MiniPad"
+                        android:text="DEF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="?textColorNumberPad" />
+
+            <LinearLayout style="@style/LinearRow.MiniPad">
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="4">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="4" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/CharacterPadStyle.MiniPad"
+                        android:text="GHI" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="?textColorNumberPad" />
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="5">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="5" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/CharacterPadStyle.MiniPad"
+                        android:text="JKL" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="?textColorNumberPad" />
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="6">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="6" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/CharacterPadStyle.MiniPad"
+                        android:text="MNO" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="?textColorNumberPad" />
+
+            <LinearLayout style="@style/LinearRow.MiniPad">
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="7">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="7" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/CharacterPadStyle.MiniPad"
+                        android:text="PQRS" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="?textColorNumberPad" />
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="8">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="8" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/CharacterPadStyle.MiniPad"
+                        android:text="TUV" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="?textColorNumberPad" />
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="9">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="9" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/CharacterPadStyle.MiniPad"
+                        android:text="WXYZ" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="?textColorNumberPad" />
+
+            <LinearLayout style="@style/LinearRow.MiniPad">
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="*">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:paddingTop="7dp"
+                        android:text="*" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="?textColorNumberPad" />
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:orientation="vertical"
+                    android:tag="0">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:layout_marginTop="-5dp"
+                        android:text="0" />
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:layout_marginTop="-12dp"
+                        android:text="+"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="?textColorNumberPad" />
+
+                <LinearLayout
+                    style="@style/LinearNumber.MiniPad"
+                    android:tag="#">
+
+                    <com.innovattic.font.FontTextView
+                        style="@style/NumberPadStyle.MiniPad"
+                        android:text="#" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="?textColorNumberPad" />
+
+        </LinearLayout>
+    </android.support.percent.PercentFrameLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:id="@+id/call_activity_sub_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="1"
+        android:background="@color/blackT87"
+        android:visibility="gone"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="1"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="100%">
+
+            <ImageView
+                android:id="@+id/call_activity_sub_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avatar_unknow"
+                app:layout_heightPercent="25%"
+                app:layout_marginTopPercent="6.25%"
+                app:layout_widthPercent="50%" />
+
+            <com.innovattic.font.FontTextView
+                android:id="@+id/call_activity_sub_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="dfadsfsaf"
+                android:textColor="?textColorNumberPad"
+                android:textSize="25sp"
+                app:flFont="roboto"
+                app:layout_marginTopPercent="36%" />
+
+            <com.innovattic.font.FontTextView
+                android:id="@+id/call_activity_sub_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="djkcxv"
+                android:textColor="?numberPadStyle"
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:flFont="roboto light"
+                app:layout_marginTopPercent="47%" />
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%">
+
+                <Button
+                    android:id="@+id/call_activity_sub_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?selector_button_accept"
+                    app:layout_heightPercent="10%"
+                    app:layout_marginTopPercent="55%"
+                    app:layout_widthPercent="50%" />
+
+                <Button
+                    android:id="@+id/call_activity_sub_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?selector_button_reject"
+                    app:layout_heightPercent="10%"
+                    app:layout_marginTopPercent="70%"
+                    app:layout_widthPercent="50%" />
+
+                <Button
+                    android:id="@+id/call_activity_sub_hang_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selector_button_hangup"
+                    android:visibility="gone"
+                    app:layout_heightPercent="12%"
+                    app:layout_marginLeftPercent="12.5%"
+                    app:layout_marginTopPercent="80%"
+                    app:layout_widthPercent="75%" />
+
+            </android.support.percent.PercentFrameLayout>
+
+        </android.support.percent.PercentFrameLayout>
+
+    </android.support.percent.PercentFrameLayout>
+</android.support.percent.PercentFrameLayout>

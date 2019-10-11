@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<familyset>
+    <family>
+       <nameset>
+           <name>roboto</name>
+       </nameset>
+       <fileset>
+           <file>roboto/Roboto-Regular.ttf</file>
+       </fileset>
+    </family>
+    <family>
+        <nameset>
+            <name>roboto medium</name>
+        </nameset>
+        <fileset>
+            <file>roboto/Roboto-Medium.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <nameset>
+            <name>roboto bold</name>
+        </nameset>
+        <fileset>
+            <file>roboto/Roboto-Bold.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <nameset>
+            <name>roboto thin</name>
+        </nameset>
+        <fileset>
+            <file>roboto/Roboto-Thin.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <nameset>
+            <name>roboto thin italic</name>
+        </nameset>
+        <fileset>
+            <file>roboto/Roboto-ThinItalic.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <nameset>
+            <name>roboto light</name>
+        </nameset>
+        <fileset>
+            <file>roboto/Roboto-Light.ttf</file>
+
+        </fileset>
+    </family>
+
+    <family>
+        <nameset>
+            <name>notera</name>
+        </nameset>
+        <fileset>
+            <file>notera/Notera.ttf</file>
+        </fileset>
+    </family>
+
+    <family>
+        <nameset>
+            <name>housegrind</name>
+        </nameset>
+        <fileset>
+            <file>housegrind/Housegrind.ttf</file>
+        </fileset>
+    </family>
+
+    <family>
+        <nameset>
+            <name>roboto medium</name>
+        </nameset>
+        <fileset>
+            <file>roboto/Roboto-Medium.ttf</file>
+        </fileset>
+    </family>
+
+</familyset>

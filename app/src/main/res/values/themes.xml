@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- =================== -->
+    <!-- Application themes  -->
+    <!-- =================== -->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- color palette -->
+        <!--<item name="colorPrimary">@color/tabBarBackground</item>-->
+        <item name="colorPrimaryDark">@color/grey500</item>
+        <item name="appBackground">@color/appBackground</item>
+        <item name="appForeground">@color/settingChildTitle</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHint">@color/grey500</item>
+        <item name="rDivider">@drawable/divider</item>
+        <item name="selectItem">@drawable/selector_list</item>
+        <item name="numberPadStyle">@color/text</item>
+        <item name="tabDialPadBackground">@color/tabDialPadBackground</item>
+        <item name="selectKeyAction">@drawable/selector_keyaction</item>
+        <item name="colorAccent">@color/text</item>
+        <item name="colorCardBackground">@color/grey100</item>
+        <item name="colorCardHighlight">@color/orange100</item>
+        <item name="android:textColorPrimary">@color/blackT87</item>
+        <!--<item name="android:textColorSecondary">@color/grey500</item>-->
+
+        <item name="tabBarBackground">@color/tabBarBackground</item>
+        <item name="tabBarDivider">@color/tabBarDivider</item>
+        <item name="tabBarIndicator">@color/tabBarIndicator</item>
+        <item name="tabBarTextColor">@color/text</item>
+        <item name="iconCall">@drawable/ic_action_call</item>
+        <item name="iconRecent">@drawable/ic_action_his</item>
+        <item name="iconContact">@drawable/ic_action_person</item>
+        <item name="iconMessage">@drawable/ic_action_message</item>
+        <item name="moreUp">@drawable/more_up</item>
+        <item name="moreDown">@drawable/more_down</item>
+        <item name="ic_action">@drawable/ic_action_overflow</item>
+        <item name="ic_action_add_person">@drawable/ic_action_add_person</item>
+        <item name="ic_search">@drawable/search</item>
+        <item name="ic_previous">@drawable/ic_previous</item>
+        <item name="ccs_logo">@drawable/ccs_onwhite</item>
+        <item name="bg_about">@drawable/bg_about</item>
+
+        <item name="call_background">@drawable/call_background</item>
+        <item name="selector_button_accept">@drawable/selector_button_accept</item>
+        <item name="selector_button_reject">@drawable/selector_button_reject</item>
+        <item name="selector_button_hangup">@drawable/selector_button_hangup</item>
+        <item name="selector_toggle_pad">@drawable/selector_toggle_pad</item>
+        <item name="selector_toggle_hold">@drawable/selector_toggle_hold</item>
+        <item name="selector_toggle_micro_off">@drawable/selector_toggle_micro_off</item>
+        <item name="selector_toggle_speaker">@drawable/selector_toggle_speaker</item>
+        <item name="selector_toggle_add">@drawable/selector_toggle_add</item>
+        <item name="selector_toggle_bluetooth">@drawable/selector_toggle_bluetooth</item>
+
+        <item name="textColorNumberPad">@color/text</item>
+        <item name="selector_keypad_mini">@drawable/selector_keypad_mini</item>
+        <item name="cursor_drawable">@drawable/cursor_drawable</item>
+        <item name="characterHint">@color/characterHint</item>
+
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="actionMenuTextColor">@color/text</item>
+
+        <!-- default theme override -->
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">?colorPrimary</item>
+        <item name="alertDialogTheme">@style/AppAlertDialog</item>
+        <item name="drawerArrowStyle">@style/AppDrawerArrowToggle</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="colorControlNormal">?numberPadStyle</item>
+        <item name="colorControlHighlight">?textColorNumberPad</item>
+        <item name="android:textColorSecondary">?numberPadStyle</item>
+        <item name="android:textColorSecondaryInverse">?numberPadStyle</item>
+        <item name="android:textColorSecondaryNoDisable">?android:popupBackground</item>
+
+        <!-- custom themed attributes -->
+        <item name="titleTextSize">@dimen/text_size_medium</item>
+        <item name="subtitleTextSize">@dimen/text_size_small</item>
+        <item name="contentTextSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <!-- color palette -->
+        <!--<item name="colorPrimary">@color/grey900</item>-->
+        <item name="colorPrimaryDark">@color/appBackground2</item>
+        <item name="appBackground">@color/appBackground2</item>
+        <item name="appForeground">@color/white</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHint">@color/grey500</item>
+        <item name="rDivider">@drawable/divider_2</item>
+        <item name="selectItem">@drawable/selector_list_2</item>
+        <item name="numberPadStyle">@color/white</item>
+        <item name="tabDialPadBackground">@color/text</item>
+        <item name="selectKeyAction">@drawable/selector_keyaction</item>
+        <item name="colorAccent">@color/text</item>
+        <item name="colorCardBackground">@color/grey900</item>
+        <item name="colorCardHighlight">@color/grey800</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--<item name="android:textColorSecondary">@color/grey500</item>-->
+
+        <item name="tabBarBackground">@color/appBackground2</item>
+        <item name="tabBarDivider">@color/white</item>
+        <item name="tabBarIndicator">@color/tabBarIndicator</item>
+        <item name="tabBarTextColor">@color/white</item>
+        <item name="iconCall">@drawable/ic_action_call_2</item>
+        <item name="iconRecent">@drawable/ic_action_his_2</item>
+        <item name="iconContact">@drawable/ic_action_person_2</item>
+        <item name="iconMessage">@drawable/ic_action_message_2</item>
+        <item name="moreUp">@drawable/more_up_2</item>
+        <item name="moreDown">@drawable/more_down_2</item>
+        <item name="ic_action">@drawable/ic_action_overflow_2</item>
+        <item name="ic_action_add_person">@drawable/ic_action_add_person_2</item>
+        <item name="ic_search">@drawable/search_2</item>
+        <item name="ic_previous">@drawable/ic_previous_2</item>
+        <item name="ccs_logo">@drawable/ccs_ondark</item>
+        <item name="bg_about">@drawable/bg_about_2</item>
+
+        <item name="call_background">@drawable/call_background_2</item>
+        <item name="selector_button_accept">@drawable/selector_button_accept</item>
+        <item name="selector_button_reject">@drawable/selector_button_reject</item>
+        <item name="selector_button_hangup">@drawable/selector_button_hangup</item>
+        <item name="selector_toggle_pad">@drawable/selector_toggle_pad</item>
+        <item name="selector_toggle_hold">@drawable/selector_toggle_hold</item>
+        <item name="selector_toggle_micro_off">@drawable/selector_toggle_micro_off</item>
+        <item name="selector_toggle_speaker">@drawable/selector_toggle_speaker</item>
+        <item name="selector_toggle_add">@drawable/selector_toggle_add</item>
+        <item name="selector_toggle_bluetooth">@drawable/selector_toggle_bluetooth</item>
+
+        <item name="textColorNumberPad">@color/text</item>
+        <item name="selector_keypad_mini">@drawable/selector_keypad_mini</item>
+        <item name="cursor_drawable">@drawable/cursor_drawable_2</item>
+        <item name="characterHint">@color/characterHint</item>
+
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="actionMenuTextColor">@color/text</item>
+
+        <!-- default theme override -->
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">?colorPrimary</item>
+        <item name="alertDialogTheme">@style/AppAlertDialog.Dark</item>
+        <item name="drawerArrowStyle">@style/AppDrawerArrowToggle</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="colorControlNormal">?numberPadStyle</item>
+        <item name="colorControlHighlight">?textColorNumberPad</item>
+        <item name="android:textColorSecondary">?numberPadStyle</item>
+        <item name="android:textColorSecondaryInverse">?numberPadStyle</item>
+        <item name="android:textColorSecondaryNoDisable">?android:popupBackground</item>
+
+        <!-- custom themed attributes -->
+        <item name="titleTextSize">@dimen/text_size_medium</item>
+        <item name="subtitleTextSize">@dimen/text_size_small</item>
+        <item name="contentTextSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AppTheme.Green" parent="Theme.AppCompat.NoActionBar">
+        <!-- color palette -->
+        <!--<item name="colorPrimary">@color/grey900</item>-->
+        <item name="colorPrimaryDark">@color/appForeground3</item>
+        <item name="appBackground">@drawable/theme_3</item>
+        <item name="appForeground">@color/white</item>
+        <item name="android:textColor">@color/appForeground3</item>
+        <item name="android:textColorHint">@color/grey500</item>
+        <item name="rDivider">@drawable/divider_3</item>
+        <item name="selectItem">@drawable/selector_list_3</item>
+        <item name="numberPadStyle">@color/white</item>
+        <item name="tabDialPadBackground">@color/text</item>
+        <item name="selectKeyAction">@drawable/selector_keyaction_3</item>
+        <item name="colorAccent">@color/appForeground3</item>
+        <item name="colorCardBackground">@color/grey900</item>
+        <item name="colorCardHighlight">@color/grey800</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--<item name="android:textColorSecondary">@color/grey500</item>-->
+
+        <item name="tabBarBackground">@color/appBackground3</item>
+        <item name="tabBarDivider">@color/white</item>
+        <item name="tabBarIndicator">@color/appForeground3</item>
+        <item name="tabBarTextColor">@color/white</item>
+        <item name="iconCall">@drawable/ic_action_call_2</item>
+        <item name="iconRecent">@drawable/ic_action_his_2</item>
+        <item name="iconContact">@drawable/ic_action_person_2</item>
+        <item name="iconMessage">@drawable/ic_action_message_2</item>
+        <item name="moreUp">@drawable/more_up_2</item>
+        <item name="moreDown">@drawable/more_down_2</item>
+        <item name="ic_action">@drawable/ic_action_overflow_2</item>
+        <item name="ic_action_add_person">@drawable/ic_action_add_person_2</item>
+        <item name="ic_search">@drawable/search_2</item>
+        <item name="ic_previous">@drawable/ic_previous_2</item>
+        <item name="ccs_logo">@drawable/ccs_ongreen</item>
+        <item name="bg_about">@drawable/bg_about_3</item>
+
+        <item name="call_background">@drawable/call_background_3</item>
+        <item name="selector_button_accept">@drawable/selector_button_accept_3</item>
+        <item name="selector_button_reject">@drawable/selector_button_reject_3</item>
+        <item name="selector_button_hangup">@drawable/selector_button_hangup_3</item>
+        <item name="selector_toggle_pad">@drawable/selector_toggle_pad_3</item>
+        <item name="selector_toggle_hold">@drawable/selector_toggle_hold_3</item>
+        <item name="selector_toggle_micro_off">@drawable/selector_toggle_micro_off_3</item>
+        <item name="selector_toggle_speaker">@drawable/selector_toggle_speaker_3</item>
+        <item name="selector_toggle_add">@drawable/selector_toggle_add_3</item>
+        <item name="selector_toggle_bluetooth">@drawable/selector_toggle_bluetooth_3</item>
+
+        <item name="textColorNumberPad">@color/appForeground3</item>
+        <item name="selector_keypad_mini">@drawable/selector_keypad_mini_3</item>
+        <item name="cursor_drawable">@drawable/cursor_drawable_2</item>
+        <item name="characterHint">@color/white</item>
+
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="actionMenuTextColor">@color/text</item>
+
+        <!-- default theme override -->
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">?colorPrimary</item>
+        <item name="alertDialogTheme">@style/AppAlertDialog.Dark</item>
+        <item name="drawerArrowStyle">@style/AppDrawerArrowToggle</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="colorControlNormal">?numberPadStyle</item>
+        <item name="colorControlHighlight">?textColorNumberPad</item>
+        <item name="android:textColorSecondary">?numberPadStyle</item>
+        <item name="android:textColorSecondaryInverse">?numberPadStyle</item>
+        <item name="android:textColorSecondaryNoDisable">?android:popupBackground</item>
+
+        <!-- custom themed attributes -->
+        <item name="titleTextSize">@dimen/text_size_medium</item>
+        <item name="subtitleTextSize">@dimen/text_size_small</item>
+        <item name="contentTextSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AppTheme.Pink" parent="Theme.AppCompat.NoActionBar">
+        <!-- color palette -->
+        <!--<item name="colorPrimary">@color/grey900</item>-->
+        <item name="colorPrimaryDark">@color/appForeground4</item>
+        <item name="appBackground">@drawable/theme_4</item>
+        <item name="appForeground">@color/white</item>
+        <item name="android:textColor">@color/appForeground4</item>
+        <item name="android:textColorHint">@color/grey500</item>
+        <item name="rDivider">@drawable/divider_4</item>
+        <item name="selectItem">@drawable/selector_list_4</item>
+        <item name="numberPadStyle">@color/white</item>
+        <item name="tabDialPadBackground">@color/text</item>
+        <item name="selectKeyAction">@drawable/selector_keyaction_4</item>
+        <item name="colorAccent">@color/appForeground4</item>
+        <item name="colorCardBackground">@color/grey900</item>
+        <item name="colorCardHighlight">@color/grey800</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--<item name="android:textColorSecondary">@color/grey500</item>-->
+
+        <item name="tabBarBackground">@color/appBackground4</item>
+        <item name="tabBarDivider">@color/white</item>
+        <item name="tabBarIndicator">@color/appForeground4</item>
+        <item name="tabBarTextColor">@color/white</item>
+        <item name="iconCall">@drawable/ic_action_call_2</item>
+        <item name="iconRecent">@drawable/ic_action_his_2</item>
+        <item name="iconContact">@drawable/ic_action_person_2</item>
+        <item name="iconMessage">@drawable/ic_action_message_2</item>
+        <item name="moreUp">@drawable/more_up_2</item>
+        <item name="moreDown">@drawable/more_down_2</item>
+        <item name="ic_action">@drawable/ic_action_overflow_2</item>
+        <item name="ic_action_add_person">@drawable/ic_action_add_person_2</item>
+        <item name="ic_search">@drawable/search_2</item>
+        <item name="ic_previous">@drawable/ic_previous_2</item>
+        <item name="ccs_logo">@drawable/ccs_ongreen</item>
+        <item name="bg_about">@drawable/bg_about_4</item>
+
+        <item name="call_background">@drawable/call_background_4</item>
+        <item name="selector_button_accept">@drawable/selector_button_accept_4</item>
+        <item name="selector_button_reject">@drawable/selector_button_reject_4</item>
+        <item name="selector_button_hangup">@drawable/selector_button_hangup_4</item>
+        <item name="selector_toggle_pad">@drawable/selector_toggle_pad_4</item>
+        <item name="selector_toggle_hold">@drawable/selector_toggle_hold_4</item>
+        <item name="selector_toggle_micro_off">@drawable/selector_toggle_micro_off_4</item>
+        <item name="selector_toggle_speaker">@drawable/selector_toggle_speaker_4</item>
+        <item name="selector_toggle_add">@drawable/selector_toggle_add_4</item>
+        <item name="selector_toggle_bluetooth">@drawable/selector_toggle_bluetooth_4</item>
+
+        <item name="textColorNumberPad">@color/appForeground4</item>
+        <item name="selector_keypad_mini">@drawable/selector_keypad_mini_4</item>
+        <item name="cursor_drawable">@drawable/cursor_drawable_2</item>
+        <item name="characterHint">@color/white</item>
+
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="actionMenuTextColor">@color/text</item>
+
+        <!-- default theme override -->
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">?colorPrimary</item>
+        <item name="alertDialogTheme">@style/AppAlertDialog.Dark</item>
+        <item name="drawerArrowStyle">@style/AppDrawerArrowToggle</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="colorControlNormal">?numberPadStyle</item>
+        <item name="colorControlHighlight">?textColorNumberPad</item>
+        <item name="android:textColorSecondary">?numberPadStyle</item>
+        <item name="android:textColorSecondaryInverse">?numberPadStyle</item>
+        <item name="android:textColorSecondaryNoDisable">?android:popupBackground</item>
+
+        <!-- custom themed attributes -->
+        <item name="titleTextSize">@dimen/text_size_medium</item>
+        <item name="subtitleTextSize">@dimen/text_size_small</item>
+        <item name="contentTextSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AppTheme.5" parent="Theme.AppCompat.NoActionBar">
+        <!-- color palette -->
+        <!--<item name="colorPrimary">@color/grey900</item>-->
+        <item name="colorPrimaryDark">@color/appForeground5</item>
+        <item name="appBackground">@drawable/theme_5</item>
+        <item name="appForeground">@color/white</item>
+        <item name="android:textColor">@color/appForeground5</item>
+        <item name="android:textColorHint">@color/grey500</item>
+        <item name="rDivider">@drawable/divider_5</item>
+        <item name="selectItem">@drawable/selector_list_5</item>
+        <item name="numberPadStyle">@color/white</item>
+        <item name="tabDialPadBackground">@color/text</item>
+        <item name="selectKeyAction">@drawable/selector_keyaction_5</item>
+        <item name="colorAccent">@color/appForeground5</item>
+        <item name="colorCardBackground">@color/grey900</item>
+        <item name="colorCardHighlight">@color/grey800</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--<item name="android:textColorSecondary">@color/grey500</item>-->
+
+        <item name="tabBarBackground">@color/appBackground5</item>
+        <item name="tabBarDivider">@color/white</item>
+        <item name="tabBarIndicator">@color/appForeground5</item>
+        <item name="tabBarTextColor">@color/white</item>
+        <item name="iconCall">@drawable/ic_action_call_2</item>
+        <item name="iconRecent">@drawable/ic_action_his_2</item>
+        <item name="iconContact">@drawable/ic_action_person_2</item>
+        <item name="iconMessage">@drawable/ic_action_message_2</item>
+        <item name="moreUp">@drawable/more_up_2</item>
+        <item name="moreDown">@drawable/more_down_2</item>
+        <item name="ic_action">@drawable/ic_action_overflow_2</item>
+        <item name="ic_action_add_person">@drawable/ic_action_add_person_2</item>
+        <item name="ic_search">@drawable/search_2</item>
+        <item name="ic_previous">@drawable/ic_previous_2</item>
+        <item name="ccs_logo">@drawable/ccs_ongreen</item>
+        <item name="bg_about">@drawable/theme_5</item>
+
+        <item name="call_background">@drawable/theme_5</item>
+        <item name="selector_button_accept">@drawable/selector_button_accept_5</item>
+        <item name="selector_button_reject">@drawable/selector_button_reject_5</item>
+        <item name="selector_button_hangup">@drawable/selector_button_hangup_4</item>
+        <item name="selector_toggle_pad">@drawable/selector_toggle_pad_5</item>
+        <item name="selector_toggle_hold">@drawable/selector_toggle_hold_5</item>
+        <item name="selector_toggle_micro_off">@drawable/selector_toggle_micro_off_5</item>
+        <item name="selector_toggle_speaker">@drawable/selector_toggle_speaker_5</item>
+        <item name="selector_toggle_add">@drawable/selector_toggle_add_5</item>
+        <item name="selector_toggle_bluetooth">@drawable/selector_toggle_bluetooth_5</item>
+
+        <item name="textColorNumberPad">@color/appForeground5</item>
+        <item name="selector_keypad_mini">@drawable/selector_keypad_mini_5</item>
+        <item name="cursor_drawable">@drawable/cursor_drawable_2</item>
+        <item name="characterHint">@color/white</item>
+
+
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="actionMenuTextColor">@color/text</item>
+
+        <!-- default theme override -->
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">?colorPrimary</item>
+        <item name="alertDialogTheme">@style/AppAlertDialog.Dark</item>
+        <item name="drawerArrowStyle">@style/AppDrawerArrowToggle</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="colorControlNormal">?numberPadStyle</item>
+        <item name="colorControlHighlight">?textColorNumberPad</item>
+        <item name="android:textColorSecondary">?numberPadStyle</item>
+        <item name="android:textColorSecondaryInverse">?numberPadStyle</item>
+        <item name="android:textColorSecondaryNoDisable">?android:popupBackground</item>
+
+        <!-- custom themed attributes -->
+        <item name="titleTextSize">@dimen/text_size_medium</item>
+        <item name="subtitleTextSize">@dimen/text_size_small</item>
+        <item name="contentTextSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AppTheme.6" parent="Theme.AppCompat.NoActionBar">
+        <!-- color palette -->
+        <!--<item name="colorPrimary">@color/grey900</item>-->
+        <item name="colorPrimaryDark">@color/appForeground6</item>
+        <item name="appBackground">@drawable/theme_6</item>
+        <item name="appForeground">@color/appForeground6</item>
+        <item name="android:textColor">@color/appForeground6</item>
+        <item name="android:textColorHint">@color/grey500</item>
+        <item name="rDivider">@drawable/divider_6</item>
+        <item name="selectItem">@drawable/selector_list_6</item>
+        <item name="numberPadStyle">@color/blackT87</item>
+        <item name="tabDialPadBackground">@color/text</item>
+        <item name="selectKeyAction">@drawable/selector_keyaction_6</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorCardBackground">@color/grey900</item>
+        <item name="colorCardHighlight">@color/grey800</item>
+        <item name="android:textColorPrimary">@color/blackT87</item>
+        <!--<item name="android:textColorSecondary">@color/grey500</item>-->
+
+        <item name="tabBarBackground">@color/appBackground6</item>
+        <item name="tabBarDivider">@color/appForeground6</item>
+        <item name="tabBarIndicator">@color/appForeground6</item>
+        <item name="tabBarTextColor">@color/appForeground6</item>
+        <item name="iconCall">@drawable/ic_action_call_6</item>
+        <item name="iconRecent">@drawable/ic_action_his_6</item>
+        <item name="iconContact">@drawable/ic_action_person_6</item>
+        <item name="iconMessage">@drawable/ic_action_message_6</item>
+        <item name="moreUp">@drawable/more_up_6</item>
+        <item name="moreDown">@drawable/more_down_6</item>
+        <item name="ic_action">@drawable/ic_action_overflow_6</item>
+        <item name="ic_action_add_person">@drawable/ic_action_add_person_6</item>
+        <item name="ic_search">@drawable/search_6</item>
+        <item name="ic_previous">@drawable/ic_previous_6</item>
+        <item name="ccs_logo">@drawable/ccs_onwhite</item>
+        <item name="bg_about">@drawable/theme_6</item>
+
+        <item name="call_background">@drawable/theme_6</item>
+        <item name="selector_button_accept">@drawable/selector_button_accept_6</item>
+        <item name="selector_button_reject">@drawable/selector_button_reject_6</item>
+        <item name="selector_button_hangup">@drawable/selector_button_hangup_6</item>
+        <item name="selector_toggle_pad">@drawable/selector_toggle_pad_6</item>
+        <item name="selector_toggle_hold">@drawable/selector_toggle_hold_6</item>
+        <item name="selector_toggle_micro_off">@drawable/selector_toggle_micro_off_6</item>
+        <item name="selector_toggle_speaker">@drawable/selector_toggle_speaker_6</item>
+        <item name="selector_toggle_add">@drawable/selector_toggle_add_6</item>
+        <item name="selector_toggle_bluetooth">@drawable/selector_toggle_bluetooth_6</item>
+
+        <item name="textColorNumberPad">@color/appForeground6</item>
+        <item name="selector_keypad_mini">@drawable/selector_keypad_mini_6</item>
+        <item name="cursor_drawable">@drawable/cursor_drawable_6</item>
+        <item name="characterHint">@color/blackT87</item>
+
+
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="checkboxStyle">@style/CheckBoxRConnect</item>
+        <item name="radioButtonStyle">@style/RadioButtonRConnect</item>
+        <item name="actionMenuTextColor">@color/text</item>
+
+        <!-- default theme override -->
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">?colorPrimary</item>
+        <item name="alertDialogTheme">@style/AppAlertDialog.Dark</item>
+        <item name="drawerArrowStyle">@style/AppDrawerArrowToggle</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="colorControlNormal">?numberPadStyle</item>
+        <item name="colorControlHighlight">?textColorNumberPad</item>
+        <item name="android:textColorSecondary">?numberPadStyle</item>
+        <item name="android:textColorSecondaryInverse">?numberPadStyle</item>
+        <item name="android:textColorSecondaryNoDisable">?android:popupBackground</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+
+        <!-- custom themed attributes -->
+        <item name="titleTextSize">@dimen/text_size_medium</item>
+        <item name="subtitleTextSize">@dimen/text_size_small</item>
+        <item name="contentTextSize">@dimen/text_size_small</item>
+    </style>
+    <!-- =================== -->
+    <!-- Alert dialog themes -->
+    <!-- =================== -->
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.ListPopupWindow">
+        <item name="android:textColorPrimary">?textColorNumberPad</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+    <style name="myCustomMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">?textColorNumberPad</item>
+    </style>
+
+    <style name="AppAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/redA200</item>
+        <!--<item name="android:textColorPrimary">@color/blackT87</item>-->
+        <!--<item name="android:textColorSecondary">@color/grey500</item>-->
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="colorCardBackground">@color/grey100</item>
+        <item name="colorCardHighlight">@color/orange100</item>
+    </style>
+
+    <style name="AppAlertDialog.Dark" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/redA100</item>
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorAccent</item>
+        <item name="colorCardBackground">@color/redA200</item>
+        <item name="colorCardHighlight">@color/grey800</item>
+    </style>
+
+    <style  name="LightEditText">
+        <item name="android:textColor">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorHint">@color/abc_secondary_text_material_light</item>
+        <item name="et_dividerColor">@drawable/color_divider_light</item>
+        <item name="et_labelTextColor">@drawable/color_label_light</item>
+        <item name="et_supportTextErrorColor">#FFFF0000</item>
+        <item name="et_dividerErrorColor">#FFFF0000</item>
+    </style>
+    <style name="LightContactEditText"  parent="LightEditText">
+        <item name="et_dividerPadding">4dp</item>
+        <item name="cet_spanHeight">32dp</item>
+        <item name="cet_spanMaxWidth">150dp</item>
+        <item name="cet_spanPaddingLeft">8dp</item>
+        <item name="cet_spanPaddingRight">12dp</item>
+        <item name="cet_spanTextSize">14sp</item>
+        <item name="cet_spanTextColor">@color/abc_primary_text_material_light</item>
+        <item name="cet_spanBackgroundColor">#FFE7E7E7</item>
+        <item name="cet_spanSpacing">4dp</item>
+    </style>
+
+    <!-- Themes-->
+    <item name="appBackground2" type="color">#051930</item>
+    <item name="appForeground2" type="color">#1565C0</item>
+    <item name="appBackground3" type="color">#1A9A8E</item>
+    <item name="appForeground3" type="color">#006d62</item>
+    <item name="appBackground4" type="color">#F598A4</item>
+    <item name="appForeground4" type="color">#F26D7D</item>
+    <item name="appBackground5" type="color">#323232</item>
+    <item name="appForeground5" type="color">#5C5D5D</item>
+    <item name="appBackground6" type="color">#fdeded</item>
+    <item name="appForeground6" type="color">#EF5350</item>
+
+</resources>

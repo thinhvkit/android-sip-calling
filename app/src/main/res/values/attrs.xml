@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackgroundColor" format="color" />
+        <attr name="pstsTabForeground" format="reference" />
+        <attr name="pstsTabTextColor" format="color" />
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <attr name="colorCardBackground" format="reference" />
+    <attr name="colorCardHighlight" format="reference" />
+    <attr name="backgroundDrawerHeader" format="reference" />
+    <attr name="titleTextSize" format="dimension|reference" />
+    <attr name="subtitleTextSize" format="dimension|reference" />
+    <attr name="contentTextSize" format="dimension|reference" />
+    <attr name="appBackground" format="color|reference" />
+    <attr name="appForeground" format="color" />
+    <attr name="numberPadStyle" format="color" />
+    <attr name="selectItem" format="reference" />
+    <attr name="tabBarBackground" format="color" />
+    <attr name="tabBarDivider" format="color" />
+    <attr name="tabBarIndicator" format="color" />
+    <attr name="tabBarTextColor" format="color" />
+    <attr name="tabDialPadBackground" format="color" />
+    <attr name="iconCall" format="reference" />
+    <attr name="iconRecent" format="reference" />
+    <attr name="iconContact" format="reference" />
+    <attr name="iconMessage" format="reference" />
+    <attr name="moreUp" format="reference" />
+    <attr name="moreDown" format="reference" />
+    <attr name="ic_action" format="reference" />
+    <attr name="ic_action_add_person" format="reference" />
+    <attr name="ic_search" format="reference" />
+    <attr name="ccs_logo" format="reference" />
+    <attr name="ic_previous" format="reference" />
+    <attr name="selectKeyAction" format="reference" />
+    <attr name="bg_about" format="reference" />
+    <attr name="call_background" format="reference" />
+    <attr name="selector_button_accept" format="reference" />
+    <attr name="selector_button_reject" format="reference" />
+    <attr name="selector_button_hangup" format="reference" />
+    <attr name="selector_toggle_pad" format="reference" />
+    <attr name="selector_toggle_hold" format="reference" />
+    <attr name="selector_toggle_micro_off" format="reference" />
+    <attr name="selector_toggle_speaker" format="reference" />
+    <attr name="selector_toggle_add" format="reference" />
+    <attr name="selector_toggle_bluetooth" format="reference" />
+    <attr name="textColorNumberPad" format="color" />
+    <attr name="selector_keypad_mini" format="reference" />
+    <attr name="cursor_drawable" format="reference" />
+    <attr name="characterHint" format="color" />
+    <attr name="rDivider" format="color" />
+
+    <declare-styleable name="QKTextView">
+        <attr name="type" />
+    </declare-styleable>
+
+    <declare-styleable name="QKLinearLayout">
+        <attr name="backgroundTint" />
+    </declare-styleable>
+
+    <attr name="type">
+        <flag name="primary_bold" value="0" />
+        <flag name="primary" value="1" />
+        <flag name="secondary" value="2" />
+        <flag name="tertiary" value="3" />
+        <flag name="pref_category" value="4" />
+        <flag name="dialog_title" value="5" />
+        <flag name="dialog_message" value="6" />
+        <flag name="dialog_button" value="7" />
+        <flag name="toolbar" value="8" />
+    </attr>
+
+    <declare-styleable name="AvatarView">
+        <attr name="initialSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RecipientEditTextView">
+        <attr name="avatarPosition">
+            <enum name="end" value="0" />
+            <enum name="start" value="1" />
+        </attr>
+        <attr name="chipBackground" format="reference" />
+        <attr name="chipBackgroundPressed" format="reference" />
+        <attr name="chipDelete" format="reference" />
+        <attr name="chipFontSize" format="reference" />
+        <attr name="chipHeight" format="reference" />
+        <attr name="chipPadding" format="reference" />
+        <attr name="disableDelete" format="boolean" />
+        <attr name="invalidChipBackground" format="reference" />
+        <attr name="imageSpanAlignment">
+            <enum name="bottom" value = "0"/>
+            <enum name="baseline" value = "1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ContactView">
+        <attr name="cv_buttonSrc" format="reference" />
+        <attr name="cv_buttonSize" format="reference|dimension" />
+        <attr name="cv_avatarSrc" format="reference" />
+        <attr name="cv_avatarSize" format="reference|dimension" />
+        <attr name="cv_spacing" format="reference|dimension" />
+        <attr name="cv_name" format="reference|string" />
+        <attr name="cv_nameTextAppearance" format="reference" />
+        <attr name="cv_nameTextSize" format="reference|dimension" />
+        <attr name="cv_nameTextColor" format="reference|color" />
+        <attr name="cv_address" format="reference|string" />
+        <attr name="cv_addressTextAppearance" format="reference" />
+        <attr name="cv_addressTextSize" format="reference|dimension" />
+        <attr name="cv_addressTextColor" format="reference|color" />
+        <attr name="android:minHeight" />
+    </declare-styleable>
+
+    <declare-styleable name="ContactEditText">
+        <attr name="cet_spanHeight" format="reference|dimension" />
+        <attr name="cet_spanMaxWidth" format="reference|dimension" />
+        <attr name="cet_spanPaddingLeft" format="reference|dimension" />
+        <attr name="cet_spanPaddingRight" format="reference|dimension" />
+        <attr name="cet_spanFontFamily" format="reference|string" />
+        <attr name="cet_spanTextStyle" format="integer">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+        <attr name="cet_spanTextSize" format="reference|dimension" />
+        <attr name="cet_spanTextColor" format="reference|color" />
+        <attr name="cet_spanBackgroundColor" format="reference|color" />
+        <attr name="cet_spanSpacing" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="emoji">
+        <attr name="emojiSize" format="dimension"/>
+    </declare-styleable>
+</resources>

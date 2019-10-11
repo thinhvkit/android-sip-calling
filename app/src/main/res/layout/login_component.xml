@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.innovattic.font.FontEditText
+        android:id="@+id/login_ed_username"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        style="@style/EditText"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:hint="Username"
+        android:inputType="number"/>
+
+    <com.innovattic.font.FontEditText
+        android:id="@+id/login_ed_password"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        style="@style/EditText"
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <com.innovattic.font.FontButton
+        android:id="@+id/login_btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/selector_button_login"
+        android:textColor="@color/selector_color_button_login"
+        android:textSize="40sp"
+        app:flFont="notera"
+        android:textAllCaps="false"
+        android:text="Login"/>
+
+    <com.innovattic.font.FontTextView
+        android:id="@+id/login_btn_diff_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/text"
+        app:flFont="roboto"
+        android:textSize="16sp"
+        android:text="Sign in with different account"
+        android:clickable="true"/>
+</merge>

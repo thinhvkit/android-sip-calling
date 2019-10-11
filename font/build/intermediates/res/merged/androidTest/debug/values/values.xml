@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontEditText"><attr format="integer" name="flunderlineHeight"/><attr format="color|reference" name="flunderlineColor"/></declare-styleable>
+    <declare-styleable name="Fonts"><attr format="string|reference" name="flFont"/><attr name="android:textStyle"/><attr format="color|reference" name="flBorderColor"/><attr format="dimension|reference" name="flBorderWidth"/></declare-styleable>
+    <item name="flFontsExtraData" type="id"/>
+</resources>

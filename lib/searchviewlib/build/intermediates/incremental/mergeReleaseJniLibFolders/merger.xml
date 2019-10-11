@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/thinhvo/RToneAndroid/RTone/lib/searchviewlib/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/thinhvo/RToneAndroid/RTone/lib/searchviewlib/src/release/jniLibs"/></dataSet></merger>

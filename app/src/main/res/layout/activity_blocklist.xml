@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?appBackground"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/view_toolbar" />
+
+        <include layout="@layout/widget_search_bar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/navigation_view"></include>-->
+
+        <!--<LinearLayout
+            android:id="@+id/ln_searchBarBlockList"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:gravity="right">
+
+            <com.innovattic.font.FontEditText
+                android:id="@+id/fm_contact_edSearchTextBlockList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:drawableLeft="?ic_search"
+                android:drawablePadding="5dp"
+                android:gravity="left|center_vertical"
+                android:hint="Search"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="?numberPadStyle"
+                android:textColorHighlight="?appForeground"
+
+                android:textColorHint="?numberPadStyle"
+                android:textCursorDrawable="?cursor_drawable"
+                android:textSize="@dimen/text_size_title"
+                font:flunderlineColor="@color/selector_color_ed_2"
+                font:flunderlineHeight="1" />
+
+            <Button
+                android:id="@+id/btnAdd_BlockList"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="?ic_action_add_person"
+                android:gravity="center" />
+        </LinearLayout>-->
+
+        <ListView
+            android:id="@+id/fm_contact_lvContactBlockList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="?rDivider"
+            android:dividerHeight="0.2dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

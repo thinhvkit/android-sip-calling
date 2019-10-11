@@ -1,0 +1,304 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?appBackground">
+
+    <LinearLayout
+        android:id="@+id/fm_call_ln"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.innovattic.font.FontEditText
+            android:id="@+id/fm_call_edNumberPhone"
+            style="@style/NumberText"
+            android:textCursorDrawable="?cursor_drawable"
+            android:textIsSelectable="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?rDivider" />
+
+        <LinearLayout style="@style/LinearRow">
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="1">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="?rDivider" />
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="2">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="2" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/CharacterPadStyle.MiniPad"
+                    android:text="ABC"
+                    android:textColor="?characterHint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="?rDivider" />
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="3">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="3" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/CharacterPadStyle.MiniPad"
+                    android:text="DEF"
+                    android:textColor="?characterHint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?rDivider" />
+
+        <LinearLayout style="@style/LinearRow">
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="4">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="4" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/CharacterPadStyle.MiniPad"
+                    android:text="GHI"
+                    android:textColor="?characterHint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="?rDivider" />
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="5">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="5" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/CharacterPadStyle.MiniPad"
+                    android:text="JKL"
+                    android:textColor="?characterHint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="?rDivider" />
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="6">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="6" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/CharacterPadStyle.MiniPad"
+                    android:text="MNO"
+                    android:textColor="?characterHint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?rDivider" />
+
+        <LinearLayout style="@style/LinearRow">
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="7">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="7" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/CharacterPadStyle.MiniPad"
+                    android:text="PQRS"
+                    android:textColor="?characterHint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="?rDivider" />
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="8">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="8" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/CharacterPadStyle.MiniPad"
+                    android:text="TUV"
+                    android:textColor="?characterHint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="?rDivider" />
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="9">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="9" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/CharacterPadStyle.MiniPad"
+                    android:text="WXYZ"
+                    android:textColor="?characterHint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?rDivider" />
+
+        <LinearLayout style="@style/LinearRow">
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="*">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:paddingTop="7dp"
+                    android:text="*" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="?rDivider" />
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:orientation="vertical"
+                android:tag="0">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:layout_marginTop="-5dp"
+                    android:text="0" />
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:layout_marginTop="-16dp"
+                    android:text="+" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="?rDivider" />
+
+            <LinearLayout
+                style="@style/LinearNumber"
+                android:tag="#">
+
+                <com.innovattic.font.FontTextView
+                    style="@style/NumberPadStyle"
+                    android:text="#" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?rDivider" />
+
+        <LinearLayout style="@style/LinearRow">
+
+            <LinearLayout
+                android:id="@+id/fm_call_lnNew"
+                style="@style/LinearAction"
+                android:tag="new">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_new" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fm_call_lnCall"
+                style="@style/LinearAction"
+                android:tag="call">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fm_call_lnDelete"
+                style="@style/LinearAction"
+                android:tag="delete">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_backspace" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.innovattic.font.FontTextView
+        android:id="@+id/tvAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:textColor="?appForeground"
+        android:textSize="@dimen/text_size_title"
+        app:flFont="roboto light" />
+</FrameLayout>

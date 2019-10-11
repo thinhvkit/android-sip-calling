@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+    <ImageView
+        android:id="@+id/payment_list_row_img"
+        android:layout_width="@dimen/contact_row_imgv_avatar"
+        android:layout_height="@dimen/contact_row_imgv_avatar"
+        android:scaleType="fitXY"
+        android:src="@drawable/unknown_contact" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <com.innovattic.font.FontTextView
+                android:id="@+id/payment_list_row_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:textColor="?textColorNumberPad"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                />
+            <com.innovattic.font.FontTextView
+                android:id="@+id/payment_list_row_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:textColor="?textColorNumberPad"
+                android:textSize="18dp" />
+            <com.innovattic.font.FontTextView
+                android:id="@+id/payment_list_row_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:textColor="?textColorNumberPad"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:paddingRight="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_payment_buy"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="Buy"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_button_payment_buy"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

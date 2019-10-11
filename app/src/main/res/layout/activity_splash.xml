@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/theme"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.ccsidd.rtone.activities.SplashScreenActivity">
+
+    <com.ccsidd.rtone.view.OTPView
+        android:id="@+id/splash_otp_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical" />
+
+    <com.ccsidd.rtone.view.LoginView
+        android:id="@+id/slash_login_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:visibility="invisible" />
+
+</FrameLayout>

@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/ccsidd/Desktop/RTone_Clone/rtone-android/font/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 470,
+                    "endColumn": 45,
+                    "endOffset": 511
+                },
+                "from": {
+                    "file": "/Users/ccsidd/Desktop/RTone_Clone/rtone-android/font/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 470,
+                        "endColumn": 45,
+                        "endOffset": 511
+                    }
+                }
+            }
+        ]
+    }
+]
